@@ -1,0 +1,23 @@
+{
+  "name": "foodsapp",
+  "version": "0.0.1",
+  "description": "Foods App. NodeJS experience",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeykhomenko/FoodsApp.git"
+  },
+  "keywords": [
+    "nodejs",
+    "foods"
+  ],
+  "author": "Sergey Khomenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeykhomenko/FoodsApp/issues"
+  },
+  "homepage": "https://github.com/sergeykhomenko/FoodsApp#readme"
+}
