@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/sergeykhomenko/FoodsApp/issues"
   },
-  "homepage": "https://github.com/sergeykhomenko/FoodsApp#readme"
+  "homepage": "https://github.com/sergeykhomenko/FoodsApp#readme",
+  "dependencies": {
+    "babel-preset-node6": "^11.0.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
