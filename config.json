@@ -1,0 +1,9 @@
+{
+  "db" : {
+    "protocol" : "mongodb+srv",
+    "login" : "<LOGIN>",
+    "password" : "<PASSWORD>",
+    "host" : "foodsapp-vkvko.mongodb.net",
+    "databaseName" : "foods_dev"
+  }
+}
