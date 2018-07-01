@@ -1,2 +1,5 @@
 .idea/
 node_modules/
+
+# Comment it when you need to update config structure
+config.json
