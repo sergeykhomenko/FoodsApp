@@ -22,7 +22,8 @@
   "homepage": "https://github.com/sergeykhomenko/FoodsApp#readme",
   "dependencies": {
     "babel-preset-node6": "^11.0.0",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongoose": "^5.1.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
