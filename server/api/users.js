@@ -4,15 +4,15 @@ import * as db from '../utils/DatabaseUtils';
 let APIUsersRouter = express.Router();
 
 APIUsersRouter.get('/', (req, res) => {
-    db.listUsers().then(data => res.send(data));
+    db.User.getUserList().then(data => res.send(data));
 });
 
 APIUsersRouter.post('/', (req, res) => {
-    db.createUser(req.body).then(data => res.send(data));
+    db.User.create(req.body).then(data => res.send(data));
 });
 
 APIUsersRouter.get('/:id', (req, res) => {
-    res.send(req.params.id);
+    db.User.getUser(req.params.id).then(data => res.send(data));
 });
 
 export default APIUsersRouter;

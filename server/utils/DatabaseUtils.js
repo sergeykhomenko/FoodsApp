@@ -4,26 +4,25 @@ import * as cfg from '../config.json';
 
 import '../models/User';
 
-const User = mongoose.model('User');
+const UserModel = mongoose.model('User');
 
 export function setupConnection() {
     const dbFullHostname = `${cfg.db.protocol}://${cfg.db.login}:${cfg.db.password}@${cfg.db.host}`;
     mongoose.connect(`${dbFullHostname}/${cfg.db.databaseName}?retryWrites=true`);
 }
 
-export function listUsers() {
-    return User.find();
-}
+export const User = {
+    create : data => {
+        const user = new UserModel({
+            name: data.name,
+            balance: 0
+        });
 
-export function createUser(data) {
-    const user = new User({
-        name: data.name,
-        balance: 0
-    });
+        return user.save();
+    },
 
-    return user.save();
-}
+    getUser: id => UserModel.findById(id),
 
-export function deleteUser(id) {
-    return User.findById(id).remove();
-}
+    getUserList : () => UserModel.find()
+
+};
