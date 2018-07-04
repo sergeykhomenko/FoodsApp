@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = 'Foods';
+import App from './components/App.jsx';
 
 ReactDOM.render(
-    <div>{title}</div>,
+    <App />,
     document.getElementById('mount-point')
 );
 
