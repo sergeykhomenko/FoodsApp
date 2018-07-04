@@ -16,11 +16,16 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: [/node_modules/, /public/],
                 use: ['babel-loader']
+            },
+            {
+                test: /\.scss$/,
+                exclude: [/node_modules/, /public/],
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.scss', '.js', '.jsx']
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
