@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "dev": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack -p --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",
