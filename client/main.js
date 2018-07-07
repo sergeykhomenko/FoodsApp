@@ -9,4 +9,9 @@ ReactDOM.render(
     document.getElementById('mount-point')
 );
 
+ReactDOM.render(
+    <Dashboard />,
+    document.getElementById('dashboard-mount-point')
+);
+
 module.hot.accept();
